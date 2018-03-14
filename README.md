@@ -4,7 +4,7 @@
 ShotsUP is an open-source prototype for Dribbble, wrote on Swift and builded on Clean architecture.
 
 <p align=center>
-![](dsup.mov.gif)
+![](https://github.com/genommax/ShotsUp/raw/master/dsup.mov.gif)
 </p>
 
 ## *Usage*
