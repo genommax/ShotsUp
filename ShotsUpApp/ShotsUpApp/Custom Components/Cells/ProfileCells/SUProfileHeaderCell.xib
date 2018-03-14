@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SUProfileHeaderCell" id="gTV-IL-0wX" customClass="SUProfileHeaderCell" customModule="ShotsUpApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="161"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="161"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TmI-nc-4ki">
+                        <rect key="frame" x="237" y="18" width="84" height="84"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="84" id="qGY-Xc-haZ"/>
+                            <constraint firstAttribute="width" constant="84" id="uC7-Bn-Bbz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="42"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUM-Zm-2l7">
+                        <rect key="frame" x="18" y="18" width="211" height="29"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shots count" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efi-hx-VTi">
+                        <rect key="frame" x="18" y="55" width="211" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="mUM-Zm-2l7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="0oh-pv-g3O"/>
+                <constraint firstItem="Efi-hx-VTi" firstAttribute="top" secondItem="mUM-Zm-2l7" secondAttribute="bottom" constant="8" id="Mgg-vM-176"/>
+                <constraint firstItem="TmI-nc-4ki" firstAttribute="leading" secondItem="mUM-Zm-2l7" secondAttribute="trailing" constant="8" id="SAI-iK-aYM"/>
+                <constraint firstAttribute="trailing" secondItem="TmI-nc-4ki" secondAttribute="trailing" constant="18" id="Y2c-hK-eME"/>
+                <constraint firstItem="mUM-Zm-2l7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="18" id="eSk-Qa-qqb"/>
+                <constraint firstItem="Efi-hx-VTi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="sYr-2T-ejW"/>
+                <constraint firstItem="TmI-nc-4ki" firstAttribute="leading" secondItem="Efi-hx-VTi" secondAttribute="trailing" constant="8" id="ua9-4C-0Wg"/>
+                <constraint firstItem="TmI-nc-4ki" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="18" id="us7-7S-88l"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="339" height="161"/>
+            <connections>
+                <outlet property="nameLabel" destination="mUM-Zm-2l7" id="SFo-ew-GHD"/>
+                <outlet property="shotsCountLabel" destination="Efi-hx-VTi" id="k0S-Sj-Q38"/>
+                <outlet property="userImageView" destination="TmI-nc-4ki" id="cqJ-ZK-3tF"/>
+            </connections>
+            <point key="canvasLocation" x="-11.5" y="1.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

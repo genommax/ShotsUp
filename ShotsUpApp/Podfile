@@ -1,0 +1,59 @@
+platform:ios,'11.0'
+
+target 'ShotsUpApp' do
+    use_frameworks!
+
+    plugin 'cocoapods-keys', {
+        :project => "ShotsUpApp",
+        :keys => [
+        "DribbbleClientID",
+        "DribbbleClientSecret",
+        "DribbbleClientAccessToken"
+        ]}
+
+    # Pods
+
+    pod 'SwiftTheme', '~> 0.4.1'
+
+    pod 'ActiveLabel', '~> 0.7.1'
+
+    pod 'IGListKit', '~> 3.0'
+    #
+
+    pod 'SwiftGen', '~> 5.2.1'
+    # https://github.com/SwiftGen/SwiftGen
+
+    pod 'Moya', '~> 10.0.2'
+    # https://github.com/Moya/Moya
+
+    pod 'Moya-ObjectMapper', '~> 2.5'
+    # https://github.com/ivanbruel/Moya-ObjectMapper
+
+    #pod 'CryptoSwift'
+    # https://github.com/krzyzanowskim/CryptoSwift
+
+    #pod 'Dollar'
+
+    pod 'Kingfisher', '~> 4.6.2'
+    # https://github.com/onevcat/Kingfisher
+
+    pod 'RealmSwift', '~> 3.1.1'
+
+    pod 'ObjectMapper+Realm', '~> 0.5'
+
+    pod 'Reusable', '~> 4.0.0'
+    # https://github.com/AliSoftware/Reusable
+
+    pod 'HGPlaceholders', '~> 0.3.0'
+
+    pod 'SwiftMessages', '~> 4.1.0'
+    # https://github.com/SwiftKickMobile/SwiftMessages
+
+    post_install do |installer|
+        installer.pods_project.targets.each do |target|
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '3.0'
+            end
+        end
+    end
+end

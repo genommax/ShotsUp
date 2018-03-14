@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SUShotCell" customModule="ShotsUpApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="128"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="172" height="128"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dqs-ev-OT1">
+                        <rect key="frame" x="0.0" y="0.0" width="172" height="128"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AgC-GA-cOx">
+                        <rect key="frame" x="4" y="4" width="164" height="120"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnO-Av-wPz">
+                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="1CU-wr-UVv"/>
+                            <constraint firstAttribute="width" constant="24" id="uEp-1v-iFC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <connections>
+                            <action selector="handleReboundAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Z7Z-nj-omK"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reboundButtonImage" translatesAutoresizingMaskIntoConstraints="NO" id="hOm-BI-9vO">
+                        <rect key="frame" x="-3" y="-2" width="16" height="16"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="b3v-We-jhs"/>
+                            <constraint firstAttribute="width" constant="16" id="yGv-TU-4Do"/>
+                        </constraints>
+                    </imageView>
+                    <view hidden="YES" clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3g-5S-oD7">
+                        <rect key="frame" x="142" y="8" width="22" height="12"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GIF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7V-me-787">
+                                <rect key="frame" x="4" y="2" width="14" height="8"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="m7V-me-787" secondAttribute="trailing" constant="4" id="2rT-HK-geK"/>
+                            <constraint firstAttribute="bottom" secondItem="m7V-me-787" secondAttribute="bottom" constant="2" id="40z-sm-y1h"/>
+                            <constraint firstItem="m7V-me-787" firstAttribute="leading" secondItem="D3g-5S-oD7" secondAttribute="leading" constant="4" id="4LX-sz-SKw"/>
+                            <constraint firstAttribute="height" constant="12" id="I7f-FQ-4bR"/>
+                            <constraint firstAttribute="width" constant="22" id="sFS-OR-d7i"/>
+                            <constraint firstItem="m7V-me-787" firstAttribute="top" secondItem="D3g-5S-oD7" secondAttribute="top" constant="2" id="vu4-fX-cuU"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.83921568629999999" green="0.85490196080000003" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Dqs-ev-OT1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2K2-5s-B3c"/>
+                <constraint firstItem="AgC-GA-cOx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="HEA-pB-nPl"/>
+                <constraint firstAttribute="trailing" secondItem="D3g-5S-oD7" secondAttribute="trailing" constant="8" id="OKR-kA-9ef"/>
+                <constraint firstAttribute="bottom" secondItem="Dqs-ev-OT1" secondAttribute="bottom" id="POw-LP-LP7"/>
+                <constraint firstAttribute="trailing" secondItem="AgC-GA-cOx" secondAttribute="trailing" constant="4" id="SgI-K8-Scb"/>
+                <constraint firstItem="Dqs-ev-OT1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="W9L-6X-g1h"/>
+                <constraint firstAttribute="trailing" secondItem="Dqs-ev-OT1" secondAttribute="trailing" id="Web-yo-0sf"/>
+                <constraint firstItem="tnO-Av-wPz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xxf-dl-GWV"/>
+                <constraint firstItem="D3g-5S-oD7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="ddH-0y-xdS"/>
+                <constraint firstItem="hOm-BI-9vO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="-3" id="mxY-ru-g5n"/>
+                <constraint firstItem="tnO-Av-wPz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rwu-9S-BOa"/>
+                <constraint firstAttribute="bottom" secondItem="AgC-GA-cOx" secondAttribute="bottom" constant="4" id="sQg-VR-gKH"/>
+                <constraint firstItem="hOm-BI-9vO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="-2" id="uDk-6v-TPm"/>
+                <constraint firstItem="AgC-GA-cOx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="wWi-8T-oWW"/>
+            </constraints>
+            <connections>
+                <outlet property="gifView" destination="D3g-5S-oD7" id="mn6-tR-HAx"/>
+                <outlet property="imageView" destination="AgC-GA-cOx" id="vVo-81-Gvj"/>
+                <outlet property="reboundImageView" destination="hOm-BI-9vO" id="4ph-vE-9tu"/>
+                <outlet property="rebountsButton" destination="tnO-Av-wPz" id="FtO-kD-roN"/>
+                <outlet property="shadowView" destination="Dqs-ev-OT1" id="R08-G4-4Xt"/>
+            </connections>
+            <point key="canvasLocation" x="77" y="39"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="reboundButtonImage" width="16" height="16"/>
+    </resources>
+</document>

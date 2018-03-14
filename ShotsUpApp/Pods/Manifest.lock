@@ -1,0 +1,81 @@
+PODS:
+  - ActiveLabel (0.7.1)
+  - Alamofire (4.6.0)
+  - HGPlaceholders (0.3.0)
+  - IGListKit (3.2.0):
+    - IGListKit/Default (= 3.2.0)
+  - IGListKit/Default (3.2.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.2.0)
+  - Keys (1.0.0)
+  - Kingfisher (4.6.2)
+  - Moya (10.0.2):
+    - Moya/Core (= 10.0.2)
+  - Moya-ObjectMapper (2.5):
+    - Moya-ObjectMapper/Core (= 2.5)
+  - Moya-ObjectMapper/Core (2.5):
+    - Moya (~> 10.0.0)
+    - ObjectMapper (~> 3.0.0)
+  - Moya/Core (10.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - ObjectMapper (3.0.0)
+  - ObjectMapper+Realm (0.5):
+    - ObjectMapper
+    - RealmSwift
+  - Realm (3.1.1):
+    - Realm/Headers (= 3.1.1)
+  - Realm/Headers (3.1.1)
+  - RealmSwift (3.1.1):
+    - Realm (= 3.1.1)
+  - Result (3.2.4)
+  - Reusable (4.0.0):
+    - Reusable/Storyboard (= 4.0.0)
+    - Reusable/View (= 4.0.0)
+  - Reusable/Storyboard (4.0.0)
+  - Reusable/View (4.0.0)
+  - SwiftGen (5.2.1)
+  - SwiftMessages (4.1.0)
+  - SwiftTheme (0.4.1)
+
+DEPENDENCIES:
+  - ActiveLabel (~> 0.7.1)
+  - HGPlaceholders (~> 0.3.0)
+  - IGListKit (~> 3.0)
+  - Keys (from `Pods/CocoaPodsKeys`)
+  - Kingfisher (~> 4.6.2)
+  - Moya (~> 10.0.2)
+  - Moya-ObjectMapper (~> 2.5)
+  - ObjectMapper+Realm (~> 0.5)
+  - RealmSwift (~> 3.1.1)
+  - Reusable (~> 4.0.0)
+  - SwiftGen (~> 5.2.1)
+  - SwiftMessages (~> 4.1.0)
+  - SwiftTheme (~> 0.4.1)
+
+EXTERNAL SOURCES:
+  Keys:
+    :path: Pods/CocoaPodsKeys
+
+SPEC CHECKSUMS:
+  ActiveLabel: 68625f22775f51c31bb691ca8de20f1e5a3bc825
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  HGPlaceholders: 2df01c51b04a30acd0b8c9c7161c7cdde4541109
+  IGListKit: ffe6f98a728ab0250aceea22e7957aa5477c5048
+  Keys: 9c35bf00f612ee1d48556f4a4b9b4551e224e90f
+  Kingfisher: 55b9c395bf8d3949676ad3861111923990ab68cf
+  Moya: 2b0531a9fef318e0bc484030c3db1e6f279ccb66
+  Moya-ObjectMapper: 167adf69db0298bf3a19ea05cb9a16ee117c8ef5
+  ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
+  ObjectMapper+Realm: 3188789fb77c189c7a83cb625333a607eb61a08f
+  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
+  RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
+  SwiftGen: 444b4c467e512a4812b8a800d731643fd265139e
+  SwiftMessages: 1bacc783c8f10bdfdc57c14860cae8a1f1fa6591
+  SwiftTheme: 36d71c4eed4b2c401c782cf036e4586c749a8173
+
+PODFILE CHECKSUM: a60bb4f2b066b79541faaf36da6b24976ddab8b9
+
+COCOAPODS: 1.3.1
